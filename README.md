@@ -3,7 +3,7 @@
 
 ![](https://cdn-images-1.medium.com/max/1600/1*vHUiXvBE0p0fLRwFHZuAYw.gif)
 
-![](https://img.shields.io/github/stars/huynhphuchuy/server.svg) ![](https://img.shields.io/github/forks/huynhphuchuy/server.svg) ![](https://img.shields.io/github/tag/huynhphuchuy/server.svg) ![](https://img.shields.io/github/release/huynhphuchuy/server.svg) ![](https://img.shields.io/github/issues/huynhphuchuy/server.svg)
+![](https://img.shields.io/github/stars/huynhphuchuy/shadow.svg) ![](https://img.shields.io/github/forks/huynhphuchuy/shadow.svg) ![](https://img.shields.io/github/tag/huynhphuchuy/shadow.svg) ![](https://img.shields.io/github/release/huynhphuchuy/shadow.svg) ![](https://img.shields.io/github/issues/huynhphuchuy/shadow.svg)
 
 ## Project Structure
 
