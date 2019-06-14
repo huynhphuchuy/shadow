@@ -52,11 +52,15 @@ Packages that are foundational but specific to the project belong in the interna
 
 ## Features
 
-- Integrated simple registration and bearer authentication
-- Request logger to db
-- Email verification
-- Email template
+- Integrated simple registration and Bearer authentication with JWT token
+- Email verification after registering
+- Email template generator and exporter
+- Log HTTP request to mongodb
 - CLI tools
+
+## API Documentation
+
+- https://documenter.getpostman.com/view/488619/S1ZueBw5?version=latest
 
 ## How to run?
 
