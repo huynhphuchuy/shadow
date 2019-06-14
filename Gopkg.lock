@@ -26,12 +26,47 @@
   version = "2.19.0"
 
 [[projects]]
+  digest = "1:9afc639ef88d907f2e87ab68cbc63117b88d0d84238fd6b08224515d00a8136a"
+  name = "github.com/alecthomas/gometalinter"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "df395bfa67c5d0630d936c0044cf07ff05086655"
+  version = "v3.0.0"
+
+[[projects]]
+  branch = "master"
+  digest = "1:c198fdc381e898e8fb62b8eb62758195091c313ad18e52a3067366e1dda2fb3c"
+  name = "github.com/alecthomas/units"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "2efee857e7cfd4f3d0138cc3cbb1b4966962b93a"
+
+[[projects]]
   digest = "1:320e7ead93de9fd2b0e59b50fd92a4d50c1f8ab455d96bc2eb083267453a9709"
   name = "github.com/asaskevich/govalidator"
   packages = ["."]
   pruneopts = "UT"
   revision = "ccb8e960c48f04d6935e72476ae4a51028f9e22f"
   version = "v9"
+
+[[projects]]
+  branch = "master"
+  digest = "1:454adc7f974228ff789428b6dc098638c57a64aa0718f0bd61e53d3cd39d7a75"
+  name = "github.com/chzyer/readline"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "2972be24d48e78746da79ba8e24e8b488c9880de"
+
+[[projects]]
+  digest = "1:848ef40f818e59905140552cc49ff3dc1a15f955e4b56d1c5c2cc4b54dbadf0c"
+  name = "github.com/client9/misspell"
+  packages = [
+    ".",
+    "cmd/misspell",
+  ]
+  pruneopts = "UT"
+  revision = "b90dc15cfd220ecf8bbc9043ecb928cef381f011"
+  version = "v0.3.4"
 
 [[projects]]
   digest = "1:76dc72490af7174349349838f2fe118996381b31ea83243812a97e5a0fd5ed55"
@@ -71,6 +106,17 @@
   version = "v1.4.0"
 
 [[projects]]
+  branch = "travis-1.9"
+  digest = "1:e8f5d9c09a7209c740e769713376abda388c41b777ba8e9ed52767e21acf379f"
+  name = "github.com/golang/lint"
+  packages = [
+    ".",
+    "golint",
+  ]
+  pruneopts = "UT"
+  revision = "883fe33ffc4344bad1ecd881f61afd5ec5d80e0a"
+
+[[projects]]
   digest = "1:318f1c959a8a740366fce4b1e1eb2fd914036b4af58fbd0a003349b305f118ad"
   name = "github.com/golang/protobuf"
   packages = ["proto"]
@@ -79,12 +125,28 @@
   version = "v1.3.1"
 
 [[projects]]
+  branch = "master"
+  digest = "1:473e7c5cbc58c538bce66e0ca2a033d31a3e7d9c6d5d96c6df1657b588bddac3"
+  name = "github.com/google/shlex"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "c34317bd91bf98fab745d77b03933cf8769299fe"
+
+[[projects]]
   digest = "1:582b704bebaa06b48c29b0cec224a6058a09c86883aaddabde889cd1a5f73e1b"
   name = "github.com/google/uuid"
   packages = ["."]
   pruneopts = "UT"
   revision = "0cd6bf5da1e1c83f8b45653022c74f71af0538a4"
   version = "v1.1.1"
+
+[[projects]]
+  branch = "master"
+  digest = "1:00d592bdacdeb0412b09f8eb2f98c6cc04470c4b72150f20733511e0821225c1"
+  name = "github.com/gordonklaus/ineffassign"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "ed7b1b5ee0f816bbc0ff35bf7c6fdb4f53b6c59a"
 
 [[projects]]
   digest = "1:c0d19ab64b32ce9fe5cf4ddceba78d5bc9807f0016db6b1183599da3dcc24d10"
@@ -138,6 +200,25 @@
   version = "v1.1.6"
 
 [[projects]]
+  branch = "master"
+  digest = "1:e51f40f0c19b39c1825eadd07d5c0a98a2ad5942b166d9fc4f54750ce9a04810"
+  name = "github.com/juju/ansiterm"
+  packages = [
+    ".",
+    "tabwriter",
+  ]
+  pruneopts = "UT"
+  revision = "720a0952cc2ac777afc295d9861263e2a4cf96a1"
+
+[[projects]]
+  digest = "1:2dc8db55c5b223e6cd50aa7915e698cfcf56d1ddfa89bbbf65e24729e0a0200a"
+  name = "github.com/lunixbochs/vtclean"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "88cfb0c2efe8ed7b0ccf0af83db39359829027bb"
+  version = "v1.0.0"
+
+[[projects]]
   digest = "1:5a0ef768465592efca0412f7e838cdc0826712f8447e70e6ccc52eb441e9ab13"
   name = "github.com/magiconair/properties"
   packages = ["."]
@@ -146,12 +227,32 @@
   version = "v1.8.1"
 
 [[projects]]
+  digest = "1:2a2a76072bd413b3484a0b5bb2fbb078b0b7dd8950e9276c900e14dce2354679"
+  name = "github.com/manifoldco/promptui"
+  packages = [
+    ".",
+    "list",
+    "screenbuf",
+  ]
+  pruneopts = "UT"
+  revision = "20f2a94120aa14a334121a6de66616a7fa89a5cd"
+  version = "v0.3.2"
+
+[[projects]]
   digest = "1:71f7e9072bdef9e2c86deb94616e1c44f55fe1bd8f9e724cd2a09b7f65e519e1"
   name = "github.com/matcornic/hermes"
   packages = ["."]
   pruneopts = "UT"
   revision = "ab1a08cd578c2c5ddaae5490bb9fc9a4759ae85e"
   version = "v1.2.0"
+
+[[projects]]
+  digest = "1:7c084e0e780596dd2a7e20d25803909a9a43689c153de953520dfbc0b0e51166"
+  name = "github.com/mattn/go-colorable"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "8029fb3788e5a4a9c00e415f586a6d033f5d38b3"
+  version = "v0.1.2"
 
 [[projects]]
   digest = "1:9b90c7639a41697f3d4ad12d7d67dfacc9a7a4a6e0bbfae4fc72d0da57c28871"
@@ -194,12 +295,33 @@
   version = "1.0.1"
 
 [[projects]]
+  digest = "1:7157fd3f337f20f9058789e47f3341ae5cb77081fa01c1d678af5a03afea6f3e"
+  name = "github.com/nicksnyder/go-i18n"
+  packages = [
+    "i18n",
+    "i18n/bundle",
+    "i18n/language",
+    "i18n/translation",
+  ]
+  pruneopts = "UT"
+  revision = "3c6ee9071cf061f4b0101e14412f74d6e7a8ada6"
+  version = "v2.0.0"
+
+[[projects]]
   digest = "1:abcdbf03ca6ca13d3697e2186edc1f33863bbdac2b3a44dfa39015e8903f7409"
   name = "github.com/olekukonko/tablewriter"
   packages = ["."]
   pruneopts = "UT"
   revision = "e6d60cf7ba1f42d86d54cdf5508611c4aafb3970"
   version = "v0.0.1"
+
+[[projects]]
+  digest = "1:7c69f3c227b0d085296096a2c7e3185be663c901e8ddad4c95c223aa5cb88bd8"
+  name = "github.com/otiai10/copy"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "a15b9cb96cf2f7930107fe0a9a6faf1b91e69df4"
+  version = "v1.0.1"
 
 [[projects]]
   digest = "1:93131d8002d7025da13582877c32d1fc302486775a1b06f62241741006428c5e"
@@ -269,6 +391,14 @@
   revision = "6386211fdfcf24c0bfbdaceafd02849ed9a8a509"
 
 [[projects]]
+  branch = "master"
+  digest = "1:ba52e5a5fb800ce55108b7a5f181bb809aab71c16736051312b0aa969f82ad39"
+  name = "github.com/tsenart/deadcode"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "210d2dc333e90c7e3eedf4f2242507a8e83ed4ab"
+
+[[projects]]
   digest = "1:d0072748c62defde1ad99dde77f6ffce492a0e5aea9204077e497c7edfb86653"
   name = "github.com/ugorji/go"
   packages = ["codec"]
@@ -324,6 +454,27 @@
   pruneopts = "UT"
   revision = "342b2e1fbaa52c93f31447ad2c6abc048c63e475"
   version = "v0.3.2"
+
+[[projects]]
+  branch = "master"
+  digest = "1:a45ec3bb7c73e52430410dff3e0a5534ce518f72a8eb4355bc8502c546b91ecc"
+  name = "golang.org/x/tools"
+  packages = [
+    "go/ast/astutil",
+    "go/gcexportdata",
+    "go/internal/gcimporter",
+    "go/types/typeutil",
+  ]
+  pruneopts = "UT"
+  revision = "ed0dc450797fdfbe6a9ee6bf3381a02099b897f9"
+
+[[projects]]
+  branch = "v3-unstable"
+  digest = "1:9e71973a6f518a213cbbfa8c24feab33046b2835684818cb6b2c9ea73e823639"
+  name = "gopkg.in/alecthomas/kingpin.v3-unstable"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "df19058c872cddcd279411d709047160e543a700"
 
 [[projects]]
   branch = "v3"
@@ -386,7 +537,9 @@
     "github.com/asaskevich/govalidator",
     "github.com/dgrijalva/jwt-go.git",
     "github.com/gin-gonic/gin",
+    "github.com/manifoldco/promptui",
     "github.com/matcornic/hermes",
+    "github.com/otiai10/copy",
     "github.com/spf13/viper",
     "golang.org/x/crypto/ssh/terminal",
     "gopkg.in/gomail.v2",
