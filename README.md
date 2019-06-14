@@ -1,7 +1,7 @@
 
 # Rest API Server Skeleton
 
-![](https://i0.wp.com/phocode.com/wp-content/uploads/2016/08/golang.sh-600x600.png?fit=300%2C300&ssl=1)
+![](https://cdn-images-1.medium.com/max/1600/1*vHUiXvBE0p0fLRwFHZuAYw.gif)
 
 ![](https://img.shields.io/github/stars/huynhphuchuy/server.svg) ![](https://img.shields.io/github/forks/huynhphuchuy/server.svg) ![](https://img.shields.io/github/tag/huynhphuchuy/server.svg) ![](https://img.shields.io/github/release/huynhphuchuy/server.svg) ![](https://img.shields.io/github/issues/huynhphuchuy/server.svg)
 
