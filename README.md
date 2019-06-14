@@ -72,6 +72,7 @@ Packages that are foundational but specific to the project belong in the interna
 5. Enjoy the show!
 
 ### Automatically
+0. Run `dep ensure` first
 1. Use `sh MENU.sh` to setup or rename the project
 2. Use `sh SERVER.sh` to run server with dev environment
 3. Use `sh VEGETA.sh` to stress test the server with 1 million requests
