@@ -61,6 +61,8 @@ func RenameProject(newProjectName string) {
 	copy.Copy("../"+projectName+"/Gopkg.lock", "../"+newProjectName+"/Gopkg.lock")
 	copy.Copy("../"+projectName+"/Gopkg.toml", "../"+newProjectName+"/Gopkg.toml")
 	copy.Copy("../"+projectName+"/README.md", "../"+newProjectName+"/README.md")
+	copy.Copy("../"+projectName+"/MENU.sh", "../"+newProjectName+"/MENU.sh")
+	copy.Copy("../"+projectName+"/SERVER.sh", "../"+newProjectName+"/SERVER.sh")
 	copy.Copy("../"+projectName+"/internal/config/samples/dev.yaml.sample", "../"+newProjectName+"/internal/config/dev.yaml")
 	copy.Copy("../"+projectName+"/internal/config/samples/prod.yaml.sample", "../"+newProjectName+"/internal/config/prod.yaml")
 
