@@ -15,3 +15,7 @@
 vendor/
 
 *.yaml
+
+*.log
+
+data/
