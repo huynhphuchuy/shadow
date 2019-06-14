@@ -39,7 +39,7 @@
 ## Package Oriented Design 
 
 #### vendor/
-- For the purpose of this post, all the source code for 3rd party packages need to be vendored (or copied) into the vendor/ folder. This includes packages that will be used from the company Kit project. Consider packages from the Kit project as 3rd party packages.
+- For the purpose of this structure, all the source code for 3rd party packages need to be vendored (or copied) into the vendor/ folder. This includes packages that will be used from the company Kit project. Consider packages from the Kit project as 3rd party packages.
 
 #### cmd/
 - All the programs this project owns belongs inside the cmd/ folder. The folders under cmd/ are always named for each program that will be built. Use the letter d at the end of a program folder to denote it as a daemon. Each folder has a matching source code file that contains the main package.
