@@ -78,3 +78,6 @@ Packages that are foundational but specific to the project belong in the interna
 4. Use `sh VEGETA.sh` to stress test the server with 1 million requests
 5. Drink a cup of tea.. 
 
+## Contact me
+- https://fb.com/phuchuy1992
+- huynhphuchuy@live.com
