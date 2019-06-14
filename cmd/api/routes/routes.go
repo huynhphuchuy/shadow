@@ -2,16 +2,16 @@ package routes
 
 import (
 	"fmt"
-	"server/cmd/api/routes/v1"
-	"server/cmd/api/routes/v2"
+	"shadow/cmd/api/routes/v1"
+	"shadow/cmd/api/routes/v2"
 	"strconv"
 	"time"
 
-	"server/internal/platform/mongo"
+	"shadow/internal/platform/mongo"
 
 	"github.com/gin-gonic/gin"
 
-	"server/internal/config"
+	"shadow/internal/config"
 )
 
 type Request struct {

@@ -1,7 +1,7 @@
 package mongo
 
 import (
-	"server/internal/config"
+	"shadow/internal/config"
 	"time"
 
 	"gopkg.in/mgo.v2"

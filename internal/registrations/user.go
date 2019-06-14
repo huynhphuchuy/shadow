@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"time"
 
-	"server/internal/platform/mongo"
+	"shadow/internal/platform/mongo"
 
 	"github.com/dgrijalva/jwt-go.git"
 	"gopkg.in/mgo.v2"
@@ -13,9 +13,9 @@ import (
 
 	"crypto/sha256"
 	"encoding/base64"
-	"server/cmd/cli/email-template/templates"
-	"server/internal/config"
-	"server/internal/platform/smtp"
+	"shadow/cmd/cli/email-template/templates"
+	"shadow/internal/config"
+	"shadow/internal/platform/smtp"
 )
 
 type UserLogin struct {

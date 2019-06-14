@@ -2,8 +2,8 @@ package v1
 
 import (
 	"net/http"
-	"server/cmd/api/routes/handlers"
-	"server/internal/platform/auth"
+	"shadow/cmd/api/routes/handlers"
+	"shadow/internal/platform/auth"
 
 	"github.com/gin-gonic/gin"
 )

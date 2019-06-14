@@ -4,9 +4,9 @@ import (
 	"flag"
 	"fmt"
 	"os"
-	"server/cmd/api/routes"
-	"server/internal/config"
-	"server/internal/platform/mongo"
+	"shadow/cmd/api/routes"
+	"shadow/internal/config"
+	"shadow/internal/platform/mongo"
 )
 
 func main() {

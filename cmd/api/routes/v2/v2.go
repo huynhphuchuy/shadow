@@ -1,7 +1,7 @@
 package v2
 
 import (
-	"server/cmd/api/routes/handlers"
+	"shadow/cmd/api/routes/handlers"
 
 	"github.com/gin-gonic/gin"
 )

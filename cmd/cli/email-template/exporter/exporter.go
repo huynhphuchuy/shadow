@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"io/ioutil"
 	"os"
-	"server/cmd/cli/email-template/templates"
-	"server/internal/config"
+	"shadow/cmd/cli/email-template/templates"
+	"shadow/internal/config"
 
 	"github.com/matcornic/hermes"
 )

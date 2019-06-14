@@ -3,11 +3,11 @@ package auth
 import (
 	"strings"
 
-	"server/internal/config"
+	"shadow/internal/config"
 
-	"server/internal/registrations"
+	"shadow/internal/registrations"
 
-	"server/internal/helpers/messages"
+	"shadow/internal/helpers/messages"
 
 	"github.com/dgrijalva/jwt-go.git"
 	"github.com/gin-gonic/gin"

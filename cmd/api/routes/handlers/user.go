@@ -2,14 +2,14 @@ package handlers
 
 import (
 	"encoding/base64"
-	"server/internal/config"
-	"server/internal/registrations"
+	"shadow/internal/config"
+	"shadow/internal/registrations"
 
 	"github.com/asaskevich/govalidator"
 	"github.com/dgrijalva/jwt-go.git"
 	"github.com/gin-gonic/gin"
 
-	"server/internal/helpers/messages"
+	"shadow/internal/helpers/messages"
 )
 
 type UserHandler struct{}

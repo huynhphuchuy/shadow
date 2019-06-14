@@ -1,7 +1,7 @@
 package generator
 
 import (
-	"server/internal/config"
+	"shadow/internal/config"
 
 	"github.com/matcornic/hermes"
 )

@@ -4,10 +4,10 @@ import (
 	"errors"
 	"fmt"
 	"net/mail"
-	"server/internal/config"
+	"shadow/internal/config"
 	"strconv"
 
-	"server/internal/helpers/generator"
+	"shadow/internal/helpers/generator"
 
 	"github.com/matcornic/hermes"
 	"golang.org/x/crypto/ssh/terminal"
