@@ -1,0 +1,14 @@
+-------------
+Hi Anonymous,
+-------------
+
+Welcome to Golang! We're very excited to have you on board.
+
+To get started with Golang, please click here: #
+
+Need help, or have questions? Just reply to this email, we'd love to help.
+
+Yours truly,
+vgolang - https://vgolang.com
+
+Copyright © 2017 Hermes. All rights reserved.

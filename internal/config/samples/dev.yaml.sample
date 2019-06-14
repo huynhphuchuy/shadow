@@ -1,0 +1,20 @@
+# Server
+product:
+  name: "vgolang"
+  url: "https://vgolang.com"
+  logo: "http://www.duchess-france.org/wp-content/uploads/2016/01/gopher.png"
+server:
+  port: 6969
+auth:
+  secret: "huynhphuchuy"
+  exp: 86400
+mongo:
+  host: "localhost:27017"
+  database: "server"
+  username: ""
+  password: ""
+smtp:
+  host: "smtp.zoho.com"
+  port: 587
+  username: "abc@zoho.com"
+  password: "xyz"
