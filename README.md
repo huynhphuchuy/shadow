@@ -44,3 +44,11 @@
 - Email template
 - CLI tools
 
+## How to run?
+
+1. Copy *.yaml.sample template from `internal/config/samples/` to `internal/config/` and rename to *.yaml
+2. Run `dep ensure` to install needed packages to vendor folder
+3. Start with `go run cmd/api/server.go -e dev` or `go run cmd/api/server.go -e prod` depends on the environment
+4. Run stress test cli tool with following command `echo "GET http://localhost:6969" | ./vegeta attack -duration=0 -connections=1000000`
+5. Enjoy the show!
+
