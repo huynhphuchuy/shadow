@@ -9,7 +9,7 @@ auth:
   secret: "huynhphuchuy"
   exp: 86400
 mongo:
-  host: "localhost:27017"
+  host: "mongo:27017"
   database: "server"
   username: ""
   password: ""
