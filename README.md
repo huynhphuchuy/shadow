@@ -7,7 +7,7 @@
 
 ## Project Structure
 
-    github.com/huynhphuchuy/server
+    github.com/huynhphuchuy/shadow
     ├── cmd/
     │   ├── cli/
     │   │   ├── email-template/
