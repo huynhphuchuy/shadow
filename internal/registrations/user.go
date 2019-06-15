@@ -31,10 +31,10 @@ type User struct {
 	BirthDay  string            `json:"dob,omitempty"`
 	Gender    string            `json:"gender,omitempty"`
 	Avatar    string            `json:"avatar,omitempty"`
-	Active    bool              `json:"active,omitempty"`
 	Payload   map[string]string `json:"payload,omitempty"`
-	UpdatedAt time.Time         `json:"updatedat"`
-	Tokens    []string          `json:"tokens"`
+	Active    bool              `json:"-"`
+	UpdatedAt time.Time         `json:"_"`
+	Tokens    []string          `json:"-"`
 }
 
 func (h User) Logout(username string) error {
