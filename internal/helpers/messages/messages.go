@@ -37,7 +37,7 @@ var SuccessMsg = map[string]string{
 	"SSS001": "Register successfully!",
 	"SSS002": "Login successfully!",
 	"SSS003": "User founded!",
-	"SSS004": "Send verification email successfully, pleas check your mailbox!",
+	"SSS004": "Send verification email successfully, please check your mailbox!",
 	"SSS005": "Verify email successfully!",
 	"SSS006": "Logout successfully!",
 }

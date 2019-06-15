@@ -25,7 +25,7 @@ func Init(v1 *gin.RouterGroup) {
 		userGroup.GET("/verify/:token", user.Verify)
 
 		userGroup.Use(auth.AuthMiddleware())
-		userGroup.GET("/resend-verification-email/:email", user.Resend)
+		userGroup.GET("/resend-verification-email", user.Resend)
 		userGroup.GET("/logout", user.Logout)
 		userGroup.GET("/me", user.GetUserInfo)
 		userGroup.GET("/info/:id", user.GetUserInfoById)

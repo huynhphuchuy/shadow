@@ -85,29 +85,17 @@ func (u UserHandler) Login(c *gin.Context) {
 }
 
 func (u UserHandler) Resend(c *gin.Context) {
-	if c.Param("email") != "" {
+	username, _ := c.Get("Username")
+	email, _ := c.Get("Email")
 
-		username, _ := c.Get("Username")
-		email, _ := c.Get("Email")
-
-		if c.Param("email") != email {
-			c.JSON(E{500, "ERR007", "This is not your email!"}.Gen())
-			c.Abort()
-			return
-		}
-
-		err := userModel.ResendVerificationEmail(email.(string), username.(string))
-		if err != nil {
-			c.JSON(E{500, "ERR008", err}.Gen())
-			c.Abort()
-			return
-		}
-
-		c.JSON(S{200, "SSS004", nil}.Gen())
+	err := userModel.ResendVerificationEmail(email.(string), username.(string))
+	if err != nil {
+		c.JSON(E{500, "ERR008", err}.Gen())
 		c.Abort()
 		return
 	}
-	c.JSON(E{400, "ERR005", nil}.Gen())
+
+	c.JSON(S{200, "SSS004", nil}.Gen())
 	c.Abort()
 	return
 }
