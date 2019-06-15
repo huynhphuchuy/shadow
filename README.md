@@ -81,6 +81,6 @@
 ### Docker
 - docker-compose up
 
-## Contact me
+## Buy me a coffee
 - https://fb.com/phuchuy1992
 - huynhphuchuy@live.com
