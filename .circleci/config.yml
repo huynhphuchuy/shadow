@@ -11,5 +11,6 @@ jobs:
       - run:
           name: Run
           command: |
+            sudo apt-get install go-dep
             dep ensure
             sh ./SERVER.sh
