@@ -16,5 +16,5 @@ jobs:
             cd /go/src/shadow
             ls
             dep ensure
-            cp /internal/config/samples/dev.yaml.sample /internal/config/dev.yaml
+            cp internal/config/samples/dev.yaml.sample internal/config/dev.yaml
             sh ./SERVER.sh
