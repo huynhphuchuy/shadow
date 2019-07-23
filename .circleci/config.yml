@@ -14,5 +14,5 @@ jobs:
           command: |
             curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
             dep ensure
-            cd
+            ls
             sh ./SERVER.sh
