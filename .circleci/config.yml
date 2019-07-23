@@ -10,4 +10,6 @@ jobs:
       - checkout
       - run:
           name: Run
-          command: sh ./SERVER.sh
+          command: |
+            dep ensure
+            sh ./SERVER.sh
