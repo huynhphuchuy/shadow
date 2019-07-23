@@ -11,6 +11,6 @@ jobs:
       - run:
           name: Run
           command: |
-            sudo apt-get install go-dep
+            curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
             dep ensure
             sh ./SERVER.sh
