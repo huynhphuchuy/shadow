@@ -10,4 +10,4 @@ jobs:
       - checkout
       - run:
           name: Run
-          command: ./SERVER.sh
+          command: sh ./SERVER.sh
