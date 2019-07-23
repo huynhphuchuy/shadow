@@ -13,7 +13,7 @@ jobs:
           name: Run
           command: |
             curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
-            cd go
+            cd go/src
             ls
             dep ensure
             sh ./SERVER.sh
