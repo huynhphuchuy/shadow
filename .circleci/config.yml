@@ -8,12 +8,12 @@ jobs:
         - master
     steps:
       - checkout:
-          path: $GOPATH/src/shadow
+          path: /go/src/shadow
       - run:
           name: Run
           command: |
             curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
-            cd $GOPATH/src/shadow
+            cd /go/src/shadow
             ls
             dep ensure
             sh ./SERVER.sh
