@@ -3,6 +3,7 @@ jobs:
   build:
     docker:
       - image: golang:latest
+      - image: circleci/mongo
     branches:
       only:
         - master
@@ -13,7 +14,6 @@ jobs:
           name: Run
           command: |
             curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
-            curl https://raw.githubusercontent.com/qrpike/CentOS-6-Quick-Install-Scripts/master/installMongoDB.sh | sh
             cd /go/src/shadow
             ls
             dep ensure
