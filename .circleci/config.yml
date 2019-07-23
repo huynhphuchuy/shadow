@@ -8,7 +8,7 @@ jobs:
         - master
     steps:
       - checkout:
-          path: GOPATH/src
+          path: $GOPATH/src
       - run:
           name: Run
           command: |
