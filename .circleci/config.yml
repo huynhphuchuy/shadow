@@ -25,7 +25,7 @@ jobs:
       - image: kroniak/ssh-client
     branches:
       only:
-        - master 
+        - master
     steps:
       - checkout:
           path: /go/src/shadow
