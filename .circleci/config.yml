@@ -19,3 +19,14 @@ jobs:
             dep ensure
             cp internal/config/samples/dev.yaml.sample internal/config/dev.yaml
             go build cmd/api/server.go
+              deploy-vultr:
+    branches:
+      only:
+        - master 
+    steps:
+      - checkout:
+          path: /go/src/shadow
+      - run:
+          name: Deploy to Vultr
+          commands:
+            - ssh root@139.180.221.43 pm2 restart shadow
