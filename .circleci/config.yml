@@ -28,7 +28,7 @@ jobs:
     steps:
       - add_ssh_keys:
         fingerprints:
-          - "/TXt1bCu6WijKJnvWeB9UJcVXrpOgFTEXaDc0IrdEVk"
+          - "29:7d:7a:9d:c4:75:6b:13:09:fe:b0:53:22:a8:62:aa"
       - run:
           name: Deploy to Vultr
           command: |
