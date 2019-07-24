@@ -33,7 +33,7 @@ jobs:
       - run:
           name: Deploy to Vultr
           command: |
-            ssh root@139.180.221.43 cd /go/src/shadow; git pull; pm2 restart shadow
+            ssh root@139.180.221.43 cd $GOPATH/src/shadow; git pull; pm2 restart shadow
 workflows:
   version: 2
   workflow:
