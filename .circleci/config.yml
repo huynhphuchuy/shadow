@@ -26,6 +26,9 @@ jobs:
     only:
       - master
     steps:
+      - add_ssh_keys:
+        fingerprints:
+          - "/TXt1bCu6WijKJnvWeB9UJcVXrpOgFTEXaDc0IrdEVk"
       - run:
           name: Deploy to Vultr
           command: |
