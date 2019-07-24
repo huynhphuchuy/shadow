@@ -26,14 +26,14 @@ jobs:
     only:
       - master
     steps:
+      - run: ssh-keyscan 139.180.221.43 >> ~/.ssh/known_hosts
       - add_ssh_keys:
           fingerprints:
-            - "60:4a:14:05:24:39:e8:32:07:3b:f5:20:8f:ee:d5:23"
-      - run: ssh-keyscan 139.180.221.43 >> ~/.ssh/known_hosts
+            - "60:4a:14:05:24:39:e8:32:07:3b:f5:20:8f:ee:d5:23" 
       - run:
           name: Deploy to Vultr
           command: |
-            ssh root@139.180.221.43 cd $GOPATH/src/shadow; git pull; pm2 restart shadow
+            ssh root@139.180.221.43 'cd $GOPATH/src/shadow; git pull; pm2 restart shadow'
 workflows:
   version: 2
   workflow:
