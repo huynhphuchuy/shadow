@@ -27,9 +27,7 @@ jobs:
       only:
         - master
     steps:
-      - checkout:
-          path: /go/src/shadow
       - run:
           name: Deploy to Vultr
           commands: |
-            ssh root@139.180.221.43 pm2 restart shadow
+            ssh root@139.180.221.43 cd /go/src/shadow; git pull; pm2 restart shadow
