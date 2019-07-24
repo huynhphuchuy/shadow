@@ -27,7 +27,7 @@ jobs:
           fingerprints:
             - "60:4a:14:05:24:39:e8:32:07:3b:f5:20:8f:ee:d5:23" 
       - run: 
-          name: Deploy to Vultr
+          name: Add SSH key
           command: ssh-keyscan 139.180.221.43 >> ~/.ssh/known_hosts
       - run:
           name: Deploy to Vultr
