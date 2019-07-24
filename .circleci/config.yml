@@ -19,7 +19,7 @@ jobs:
             dep ensure
             cp internal/config/samples/dev.yaml.sample internal/config/dev.yaml
             go build cmd/api/server.go
-            echo "CI passed!"
+            echo "CI passed ^^!"
   deploy-vultr:
     docker:
       - image: kroniak/ssh-client
