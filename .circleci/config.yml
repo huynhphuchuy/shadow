@@ -20,6 +20,8 @@ jobs:
             cp internal/config/samples/dev.yaml.sample internal/config/dev.yaml
             go build cmd/api/server.go
   deploy-vultr:
+    docker:
+      - image: kroniak/ssh-client
     branches:
       only:
         - master 
