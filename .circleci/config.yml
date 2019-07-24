@@ -11,7 +11,7 @@ jobs:
       - checkout:
           path: /go/src/shadow
       - run:
-          name: Setup Environment
+          name: Setup Environment & Build
           command: |
             curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
             cd /go/src/shadow
