@@ -19,6 +19,7 @@ jobs:
             dep ensure
             cp internal/config/samples/dev.yaml.sample internal/config/dev.yaml
             go build cmd/api/server.go
+            echo "CI passed!"
   deploy-vultr:
     docker:
       - image: kroniak/ssh-client
@@ -30,5 +31,5 @@ jobs:
           path: /go/src/shadow
       - run:
           name: Deploy to Vultr
-          commands:
-            - ssh root@139.180.221.43 pm2 restart shadow
+          commands: |
+            ssh root@139.180.221.43 pm2 restart shadow
