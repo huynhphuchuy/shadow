@@ -31,7 +31,7 @@ jobs:
           command: ssh-keyscan 139.180.221.43 >> ~/.ssh/known_hosts
       - run:
           name: Deploy to Vultr
-          command: ssh root@139.180.221.43 'cd /var/www/go/src/shadow; git pull; cp internal/config/samples/dev.yaml.sample internal/config/dev.yaml; dep ensure; pm2 restart shadow'
+          command: ssh root@139.180.221.43 'cd /var/www/go/src/shadow; git pull; dep ensure; pm2 restart shadow'
 workflows:
   version: 2
   workflow:
