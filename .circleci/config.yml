@@ -23,9 +23,8 @@ jobs:
   deploy-vultr:
     docker:
       - image: kroniak/ssh-client
-    branches:
-      only:
-        - master
+    only:
+      - master
     steps:
       - run:
           name: Deploy to Vultr
