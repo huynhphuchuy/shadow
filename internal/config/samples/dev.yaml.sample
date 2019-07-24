@@ -11,7 +11,7 @@ auth:
 mongo:
   host: "localhost:27017"
   database: "server"
-  username: "golang"
+  username: ""
 smtp:
   host: "smtp.zoho.com"
   port: 587
