@@ -4,9 +4,6 @@ jobs:
     docker:
       - image: golang:latest
       - image: circleci/mongo
-    # branches:
-    #   only:
-    #     - master
     steps:
       - checkout:
           path: /go/src/shadow
