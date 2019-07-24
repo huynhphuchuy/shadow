@@ -38,5 +38,10 @@ workflows:
   version: 2
   workflow:
     jobs:
-    - build
-    - deploy-vultr
+      - build
+      - deploy-vultr:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
