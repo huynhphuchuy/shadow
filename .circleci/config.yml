@@ -27,11 +27,12 @@ jobs:
             cp internal/config/samples/dev.yaml.sample internal/config/dev.yaml
             go build cmd/api/server.go
             echo "CI passed!"
-            
+
 
   deploy_vultr:
     docker:
       - image: kroniak/ssh-client
+      
     steps:
       - run:
           name: Install CURL
