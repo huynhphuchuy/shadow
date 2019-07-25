@@ -1,10 +1,17 @@
 version: 1
+orbs:
+  detect: circleci/slack@3.3.0
 jobs:
   build:
     docker:
       - image: golang:latest
       - image: circleci/mongo
     steps:
+      - slack/notify:
+          color: '#42e2f4'
+          mentions: 'USERID1,USERID2,'
+          message: "Starting CI/CD on your commit"
+          webhook: $SLACK_WEBHOOK
       - checkout:
           path: /go/src/shadow
       - run:
