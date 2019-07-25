@@ -27,6 +27,10 @@ jobs:
             cp internal/config/samples/dev.yaml.sample internal/config/dev.yaml
             go build cmd/api/server.go
             echo "CI passed!"
+      - slack/approval-notification:
+          mentions: 'UD75JR0G1'
+          message: 'CI successsfully and waiting for approval!'
+          webhook: 'https://hooks.slack.com/services/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'
 
   deploy_vultr:
     docker:
