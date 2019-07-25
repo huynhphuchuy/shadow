@@ -11,7 +11,7 @@ jobs:
           color: '#42e2f4'
           mentions: 'UD75JR0G1'
           message: 'Starting CI/CD on your commit'
-          webhook: $SLACK_WEBHOOK
+          webhook: 'https://hooks.slack.com/services/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'
       - checkout:
           path: /go/src/shadow
       - run:
