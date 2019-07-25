@@ -32,7 +32,7 @@ jobs:
   deploy_vultr:
     docker:
       - image: kroniak/ssh-client
-      
+
     steps:
       - run:
           name: Install CURL
@@ -45,7 +45,7 @@ jobs:
           command: ssh-keyscan 139.180.221.43 >> ~/.ssh/known_hosts
       - run:
           name: Deploy to Vultr
-          command: ssh root@139.180.221.43 'cd /var/www/go/src/shadow; git pull; dep ensure; pm2 restart shadow'
+          command: ssh root@139.180.221.43 'cd /var/www/go/src/shadow; git pull; dep ensure; docker-compose up -d --force-recreate --no-deps --build shadow'
       - slack/status:
           # fail_only: true
           mentions: 'UD75JR0G1'
