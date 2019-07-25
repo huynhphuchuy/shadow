@@ -34,7 +34,7 @@ jobs:
     steps:
       - run:
           name: Install CURL
-          command: apt-get install curl
+          command: apk add curl
       - add_ssh_keys:
           fingerprints:
             - '60:4a:14:05:24:39:e8:32:07:3b:f5:20:8f:ee:d5:23'
