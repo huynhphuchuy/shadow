@@ -27,8 +27,6 @@ jobs:
   deploy-vultr:
     docker:
       - image: kroniak/ssh-client
-    only:
-      - master
     steps:
       - add_ssh_keys:
           fingerprints:
@@ -49,4 +47,4 @@ workflows:
             - build
           filters:
             branches:
-              - master
+              only: master
