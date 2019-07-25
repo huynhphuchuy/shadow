@@ -1,11 +1,14 @@
-version: 2.1
+version: 2
+
 orbs:
   slack: circleci/slack@3.2.0
+
 jobs:
   build:
     docker:
       - image: golang:latest
       - image: circleci/mongo
+
     steps:
       - slack/notify:
           color: '#42e2f4'
@@ -24,6 +27,7 @@ jobs:
             cp internal/config/samples/dev.yaml.sample internal/config/dev.yaml
             go build cmd/api/server.go
             echo "CI passed!"
+
   deploy_vultr:
     docker:
       - image: kroniak/ssh-client
@@ -39,9 +43,11 @@ jobs:
           command: ssh root@139.180.221.43 'cd /var/www/go/src/shadow; git pull; dep ensure; pm2 restart shadow'
       - slack/status:
           # fail_only: true 
-          only_for_branch: "master"
+          only_for_branch: 'master'
           mentions: 'UD75JR0G1'
           webhook: 'https://hooks.slack.com/services/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'
+
+
 workflows:
   version: 2
   build_and_deploy:
