@@ -44,8 +44,6 @@ jobs:
       - slack/status:
           # fail_only: true
           mentions: 'UD75JR0G1'
-          success_message: '🎉 A ${CIRCLE_JOB} job has succeeded! ${SLACK_MENTIONS}'
-          failure_message: '🔴 A ${CIRCLE_JOB} job has failed! ${SLACK_MENTIONS}'
           webhook: 'https://hooks.slack.com/services/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'
 
 
