@@ -47,7 +47,6 @@ jobs:
           name: Deploy to Vultr
           command: ssh root@139.180.221.43 'cd /var/www/go/src/shadow; git pull; dep ensure; docker-compose up -d --force-recreate --no-deps --build shadow'
       - slack/status:
-          # fail_only: true
           mentions: 'UD75JR0G1'
           webhook: 'https://hooks.slack.com/services/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'
 
