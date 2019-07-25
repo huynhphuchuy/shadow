@@ -1,4 +1,6 @@
-version: 1
+version: 2.1
+orbs:
+  slack: circleci/slack@3.2.0
 jobs:
   build:
     docker:
@@ -37,8 +39,6 @@ jobs:
       - run:
           name: Deploy to Vultr
           command: ssh root@139.180.221.43 'cd /var/www/go/src/shadow; git pull; dep ensure; pm2 restart shadow'
-orbs:
-  slack: circleci/slack@x.y.z
 workflows:
   version: 2
   workflow:
